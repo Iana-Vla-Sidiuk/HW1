@@ -9,21 +9,21 @@ Console.WriteLine("Введите второе число");
 int number2 = Convert.ToInt32(Console.ReadLine());
 int max = 0;
 int min = 0;
-if (number1 > number2) 
+if (number1 > number2)
 {
     max = number1;
     min = number2;
 }
 else
 {
- if (number2 > number1) 
- {
-    max = number2;
-    min = number1;
- }  
+    if (number2 > number1)
+    {
+        max = number2;
+        min = number1;
+    }
     else
     {
-     Console.WriteLine("Оба числа равны");   
+        Console.WriteLine("Оба числа равны");
     }
 }
 Console.WriteLine("max = " + max + ", min = " + min);
